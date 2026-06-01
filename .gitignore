@@ -1,0 +1,15 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# AWS Keys
+*.pem
+
+# Python
+venv/
+__pycache__/
+
+# Node
+node_modules/
