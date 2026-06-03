@@ -75,6 +75,8 @@ resource "aws_instance" "frontend" {
 
   key_name = "terraform-key"
 
+  user_data = file("frontend-userdata.sh")
+
   vpc_security_group_ids = [
     aws_security_group.frontend_sg.id
   ]

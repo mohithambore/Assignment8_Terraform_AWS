@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 
 app.post('/submit', async (req, res) => {
     try {
-        await axios.post('http://localhost:5000/api', req.body);
+        await axios.post('http://52.66.198.162:5000/api', req.body);
         res.send('<h3>Data submitted successfully</h3>');
     } catch (error) {
         res.send('<h3>Error submitting data</h3>');
